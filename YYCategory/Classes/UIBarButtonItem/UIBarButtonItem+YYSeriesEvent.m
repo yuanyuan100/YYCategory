@@ -84,9 +84,7 @@ static void *YYSeriesEvent_yy_preventInterval = &YYSeriesEvent_yy_preventInterva
 - (NSTimeInterval)yy_preventInterval {
     id flag = objc_getAssociatedObject(self, YYSeriesEvent_yy_preventInterval);
     // 给出默认值
-    if (nil == flag) {
-        return 1.f;
-    }
+    if (nil == flag) return 1.f;
     return [(NSNumber *)flag doubleValue];
 }
 
