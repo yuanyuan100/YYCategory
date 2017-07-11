@@ -1,5 +1,3 @@
-# YYCategory
-
 [![CI Status](http://img.shields.io/travis/yuanyuan100/YYCategory.svg?style=flat)](https://travis-ci.org/yuanyuan100/YYCategory)
 [![Version](https://img.shields.io/cocoapods/v/YYCategory.svg?style=flat)](http://cocoapods.org/pods/YYCategory)
 [![License](https://img.shields.io/cocoapods/l/YYCategory.svg?style=flat)](http://cocoapods.org/pods/YYCategory)
