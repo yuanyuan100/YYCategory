@@ -8,8 +8,12 @@
 
 #import "YYViewController.h"
 
-@interface YYViewController ()
+#ifndef CELL_ARRAY
+#define CELL_ARRAY @[@"YYTouchRangeExpansionVC", @"YYSeriesEventVC"]
+#endif
 
+@interface YYViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation YYViewController
@@ -18,6 +22,28 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.view addSubview:self.tableView];
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return CELL_ARRAY.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.textLabel.text = CELL_ARRAY[indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.navigationController pushViewController:[NSClassFromString(CELL_ARRAY[indexPath.row]) new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+
+#ifndef LITTLE_ALERT
+#define LITTLE_ALERT(t, m) [[[UIAlertView alloc] initWithTitle:(t) message:(m) delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+#endif
+
 #endif

@@ -21,6 +21,10 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		64A8B57C1F146BE800944A7F /* YYTouchRangeExpansionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A8B57A1F146BE800944A7F /* YYTouchRangeExpansionVC.m */; };
+		64A8B57D1F146BE800944A7F /* YYTouchRangeExpansionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A8B57B1F146BE800944A7F /* YYTouchRangeExpansionVC.xib */; };
+		64A8B5871F14AEF000944A7F /* YYSeriesEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A8B5851F14AEF000944A7F /* YYSeriesEventVC.m */; };
+		64A8B5881F14AEF000944A7F /* YYSeriesEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A8B5861F14AEF000944A7F /* YYSeriesEventVC.xib */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E9944AEA1E49F3B7F5D6A630 /* Pods_YYCategory_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C6AD27D478DC7BB70ECA91 /* Pods_YYCategory_Tests.framework */; };
@@ -37,9 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A36D48052FF98C9F3E276D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3A36D48052FF98C9F3E276D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		44F347DA0996CC524582D2AE /* Pods_YYCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C27A0D3B5C2D0D040456F08 /* YYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YYCategory.podspec; path = ../YYCategory.podspec; sourceTree = "<group>"; };
+		4C27A0D3B5C2D0D040456F08 /* YYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYCategory.podspec; path = ../YYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D7230ACA2A5C7D03F797C4B /* Pods-YYCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCategory_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYCategory_Tests/Pods-YYCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YYCategory_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYCategory_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +64,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		64A8B5791F146BE800944A7F /* YYTouchRangeExpansionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTouchRangeExpansionVC.h; sourceTree = "<group>"; };
+		64A8B57A1F146BE800944A7F /* YYTouchRangeExpansionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTouchRangeExpansionVC.m; sourceTree = "<group>"; };
+		64A8B57B1F146BE800944A7F /* YYTouchRangeExpansionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYTouchRangeExpansionVC.xib; sourceTree = "<group>"; };
+		64A8B5841F14AEF000944A7F /* YYSeriesEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSeriesEventVC.h; sourceTree = "<group>"; };
+		64A8B5851F14AEF000944A7F /* YYSeriesEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSeriesEventVC.m; sourceTree = "<group>"; };
+		64A8B5861F14AEF000944A7F /* YYSeriesEventVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYSeriesEventVC.xib; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A842E6486219FA60A08EDE /* Pods-YYCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYCategory_Example/Pods-YYCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89C6AD27D478DC7BB70ECA91 /* Pods_YYCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943B61A3C1B5FCB59C3163E3 /* Pods-YYCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYCategory_Tests/Pods-YYCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C37A0274E6D78F4EDC3D6974 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C37A0274E6D78F4EDC3D6974 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D0DCE0A022C0F1EB28FEF57C /* Pods-YYCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCategory_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYCategory_Example/Pods-YYCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +142,8 @@
 		6003F593195388D20070C39A /* Example for YYCategory */ = {
 			isa = PBXGroup;
 			children = (
+				64A8B5831F14AEC700944A7F /* UIBarButtonItem */,
+				64A8B5781F146BD100944A7F /* UIView */,
 				6003F59C195388D20070C39A /* YYAppDelegate.h */,
 				6003F59D195388D20070C39A /* YYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +195,26 @@
 				C37A0274E6D78F4EDC3D6974 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		64A8B5781F146BD100944A7F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				64A8B5791F146BE800944A7F /* YYTouchRangeExpansionVC.h */,
+				64A8B57A1F146BE800944A7F /* YYTouchRangeExpansionVC.m */,
+				64A8B57B1F146BE800944A7F /* YYTouchRangeExpansionVC.xib */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		64A8B5831F14AEC700944A7F /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				64A8B5841F14AEF000944A7F /* YYSeriesEventVC.h */,
+				64A8B5851F14AEF000944A7F /* YYSeriesEventVC.m */,
+				64A8B5861F14AEF000944A7F /* YYSeriesEventVC.xib */,
+			);
+			name = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		FF65765A267B8C1C3457663D /* Pods */ = {
@@ -250,6 +282,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yuanyuan100;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P89EA5NSQ3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -283,6 +318,8 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				64A8B5881F14AEF000944A7F /* YYSeriesEventVC.xib in Resources */,
+				64A8B57D1F146BE800944A7F /* YYTouchRangeExpansionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A8B5871F14AEF000944A7F /* YYSeriesEventVC.m in Sources */,
+				64A8B57C1F146BE800944A7F /* YYTouchRangeExpansionVC.m in Sources */,
 				6003F59E195388D20070C39A /* YYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -479,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -524,9 +563,11 @@
 			baseConfigurationReference = 72A842E6486219FA60A08EDE /* Pods-YYCategory_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P89EA5NSQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYCategory/YYCategory-Prefix.pch";
 				INFOPLIST_FILE = "YYCategory/YYCategory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,9 +580,11 @@
 			baseConfigurationReference = D0DCE0A022C0F1EB28FEF57C /* Pods-YYCategory_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P89EA5NSQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYCategory/YYCategory-Prefix.pch";
 				INFOPLIST_FILE = "YYCategory/YYCategory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

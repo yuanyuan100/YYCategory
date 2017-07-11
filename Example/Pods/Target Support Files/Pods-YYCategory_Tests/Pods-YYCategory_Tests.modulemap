@@ -1,0 +1,6 @@
+framework module Pods_YYCategory_Tests {
+  umbrella header "Pods-YYCategory_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
