@@ -8,10 +8,12 @@
 
 #import "YYSeriesEventVC.h"
 #import <YYCategory/UIBarButtonItem+YYSeriesEvent.h>
+#import <YYCategory/UIControl+YYSeriesEvent.h>
 
 #import <objc/runtime.h>
 
 @interface YYSeriesEventVC ()
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
 
@@ -25,9 +27,15 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonHandler:)];
     self.navigationItem.rightBarButtonItem.yy_preventSeriesEvent = YES;
     //self.navigationItem.rightBarButtonItem.yy_preventInterval = 5.0f;
+    
+    self.btn.yy_preventSeriesEvent = YES;
+    self.btn.yy_preventInterval = 3.f;
 }
 
 - (void)barButtonHandler:(UIBarButtonItem *)item {
+    NSLog(@"连续点击");
+}
+- (IBAction)clickBtn:(id)sender {
     NSLog(@"连续点击");
 }
 

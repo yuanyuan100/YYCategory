@@ -1,12 +1,12 @@
 //
-//  UIBarButtonItem+YYSeriesEvent.m
+//  UIControl+YYSeriesEvent.m
 //  Pods
 //
-//  Created by Mr.Pyy on 2017/7/11.
+//  Created by Mr.Pyy on 2017/7/12.
 //
 //
 
-#import "UIBarButtonItem+YYSeriesEvent.h"
+#import "UIControl+YYSeriesEvent.h"
 #import <objc/runtime.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,46 +15,40 @@ static void *YYSeriesEvent_yy_doActionFlag = &YYSeriesEvent_yy_doActionFlag;
 static void *YYSeriesEvent_yy_isPreventSeriesEvent = &YYSeriesEvent_yy_isPreventSeriesEvent;
 static void *YYSeriesEvent_yy_preventInterval = &YYSeriesEvent_yy_preventInterval;
 
-@interface UIBarButtonItem ()
-
+@interface UIControl ()
 /**
  时间间隔结束的标识符
  */
 @property (nonatomic, getter=yy_isDoActionFlag) BOOL yy_doActionFlag;
-
 @end
 
-@implementation UIBarButtonItem (YYSeriesEvent)
+@implementation UIControl (YYSeriesEvent)
 
 + (void)load {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wundeclared-selector"
-    Method originFun = class_getInstanceMethod(self, @selector(_sendAction:withEvent:));
-#pragma clang diagnostic pop
+    Method originFun = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
+    Method exchangeFun = class_getInstanceMethod(self, @selector(yy_sendAction:to:forEvent:));
     
-    Method changeFun = class_getInstanceMethod(self, @selector(yy_sendAction:withEvent:));
-    
-    method_exchangeImplementations(originFun, changeFun);
+    method_exchangeImplementations(originFun, exchangeFun);
 }
 
-- (void)yy_sendAction:(nullable SEL)action withEvent:(nullable UIEvent *)event {
+- (void)yy_sendAction:(SEL)action to:(nullable id)target forEvent:(nullable UIEvent *)event {
     if (self.yy_isPreventSeriesEvent == NO) {
-        [self yy_doAction];
+        [self yy_doAction:action to:target];
     } else {
         if (self.yy_isDoActionFlag == NO) {
             self.yy_doActionFlag = YES;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.yy_preventInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 self.yy_doActionFlag = NO;
             });
-            [self yy_doAction];
+            [self yy_doAction:action to:target];
         }
     }
 }
 
-- (void)yy_doAction {
+- (void)yy_doAction:(SEL)action to:(nullable id)target {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    [self.target performSelector:self.action withObject:self];
+    [target performSelector:action withObject:self];
 #pragma clang diagnostic pop
 }
 
