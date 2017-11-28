@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "NSObject+YYDescription.h"
+#import "NSObject+YYLog.h"
 #import "UIBarButtonItem+YYSeriesEvent.h"
 #import "UIControl+YYSeriesEvent.h"
 #import "UIView+YYTouchRangeExpansion.h"

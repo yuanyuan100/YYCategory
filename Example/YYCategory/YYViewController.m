@@ -7,6 +7,8 @@
 //
 
 #import "YYViewController.h"
+#import <YYCategory/NSObject+YYLog.h>
+#import <YYCategory/NSObject+YYDescription.h>
 
 #ifndef CELL_ARRAY
 #define CELL_ARRAY @[@"YYTouchRangeExpansionVC", @"YYSeriesEventVC"]
@@ -28,7 +30,10 @@
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:self.tableView];
-
+    
+    NSArray *a = @[_tableView, _tableView];
+    NSLog(@"%@", a);
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
