@@ -30,28 +30,35 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-#s.source_files = 'YYCategory/Classes/**/*.{h,m}'
-  
+  #s.source_files = 'YYCategory/Classes/**/*.{h,m}'
+
   s.subspec 'NSBundle' do |ss|
       ss.source_files = 'YYCategory/Classes/NSBundle/*.{h,m}'
+      ss.frameworks = 'Foundation'
   end
   s.subspec 'NSDictionary' do |ss|
       ss.source_files = 'YYCategory/Classes/NSDictionary/*.{h,m}'
+      ss.frameworks = 'Foundation'
   end
   s.subspec 'NSObject' do |ss|
       ss.source_files = 'YYCategory/Classes/NSObject/*.{h,m}'
+      ss.frameworks = 'Foundation'
   end
   s.subspec 'UIApplication' do |ss|
       ss.source_files = 'YYCategory/Classes/UIApplication/*.{h,m}'
+      ss.frameworks = 'UIKit'
   end
   s.subspec 'UIBarButtonItem' do |ss|
       ss.source_files = 'YYCategory/Classes/UIBarButtonItem/*.{h,m}'
+      ss.frameworks = 'UIKit'
   end
   s.subspec 'UIControl' do |ss|
       ss.source_files = 'YYCategory/Classes/UIControl/*.{h,m}'
+      ss.frameworks = 'UIKit'
   end
   s.subspec 'UIView' do |ss|
       ss.source_files = 'YYCategory/Classes/UIView/*.{h,m}'
+      ss.frameworks = 'UIKit'
   end
   #s.subspec '<#name#>' do |ss|
   #   <#content#>
@@ -62,6 +69,5 @@ TODO: Add long description of the pod here.
   # }
 
   #s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'Foudation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
