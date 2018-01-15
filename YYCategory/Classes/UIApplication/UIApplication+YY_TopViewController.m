@@ -9,6 +9,7 @@
 #import "UIApplication+YY_TopViewController.h"
 
 @implementation UIApplication (YY_TopViewController)
+
 + (UIViewController *)yy_topViewController {
     UIViewController *rootViewController = [self sharedApplication].keyWindow.rootViewController;
     UIViewController *currentVC = [self yy_topViewControllerWithRootViewController:rootViewController];
@@ -31,4 +32,5 @@
         return rootViewController;
     }
 }
+
 @end

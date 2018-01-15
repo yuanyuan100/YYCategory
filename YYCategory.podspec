@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYCategory'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of YYCategory.'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,38 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YYCategory/Classes/**/*'
+#s.source_files = 'YYCategory/Classes/**/*.{h,m}'
+  
+  s.subspec 'NSBundle' do |ss|
+      ss.source_files = 'YYCategory/Classes/NSBundle/*.{h,m}'
+  end
+  s.subspec 'NSDictionary' do |ss|
+      ss.source_files = 'YYCategory/Classes/NSDictionary/*.{h,m}'
+  end
+  s.subspec 'NSObject' do |ss|
+      ss.source_files = 'YYCategory/Classes/NSObject/*.{h,m}'
+  end
+  s.subspec 'UIApplication' do |ss|
+      ss.source_files = 'YYCategory/Classes/UIApplication/*.{h,m}'
+  end
+  s.subspec 'UIBarButtonItem' do |ss|
+      ss.source_files = 'YYCategory/Classes/UIBarButtonItem/*.{h,m}'
+  end
+  s.subspec 'UIControl' do |ss|
+      ss.source_files = 'YYCategory/Classes/UIControl/*.{h,m}'
+  end
+  s.subspec 'UIView' do |ss|
+      ss.source_files = 'YYCategory/Classes/UIView/*.{h,m}'
+  end
+  #s.subspec '<#name#>' do |ss|
+  #   <#content#>
+  #end
   
   # s.resource_bundles = {
   #   'YYCategory' => ['YYCategory/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'Foudation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
