@@ -7,30 +7,22 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'YYCategory'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of YYCategory.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.name             = 'YYCategoryKit'
+  s.version          = '0.0.2'
+  s.summary          = '自己积累的分类方法'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    自己积累的分类方法,便于快速开发
+                          DESC
 
   s.homepage         = 'https://github.com/yuanyuan100/YYCategory'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuanyuan100' => '469092943@qq.com' }
   s.source           = { :git => 'https://github.com/yuanyuan100/YYCategory.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '8.0'
 
-#s.source_files = 'YYCategory/Classes/**/*.{h,m}'
+  s.source_files = 'YYCategory/Classes/YYCategoryHeader.h'
+  s.public_header_files = 'YYCategory/Classes/YYCategoryHeader.h'
   
   s.subspec 'NSBundle' do |ss|
       ss.source_files = 'YYCategory/Classes/NSBundle/*.{h,m}'
@@ -53,6 +45,10 @@ TODO: Add long description of the pod here.
   s.subspec 'UIView' do |ss|
       ss.source_files = 'YYCategory/Classes/UIView/*.{h,m}'
   end
+  s.subspec 'UIAlertController' do |ss|
+     ss.source_files = 'YYCategory/Classes/UIAlertController/*.{h,m}'
+  end
+  
   #s.subspec '<#name#>' do |ss|
   #   <#content#>
   #end
@@ -61,7 +57,6 @@ TODO: Add long description of the pod here.
   #   'YYCategory' => ['YYCategory/Assets/*.png']
   # }
 
-  #s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foudation'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
 end

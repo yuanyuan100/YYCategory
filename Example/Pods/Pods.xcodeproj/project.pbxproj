@@ -12,6 +12,9 @@
 		3764296522E709EE153CFDF0EB1F0A81 /* NSObject+YYDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FC4A667D2012DE524008A60BD4FAF3 /* NSObject+YYDescription.m */; };
 		3C2CBEC0200C7B1D000DE8E9 /* NSBundle+YYModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2CBEBE200C7B1D000DE8E9 /* NSBundle+YYModule.h */; };
 		3C2CBEC1200C7B1D000DE8E9 /* NSBundle+YYModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2CBEBF200C7B1D000DE8E9 /* NSBundle+YYModule.m */; };
+		3C8BA48D2029597E0057661B /* YYCategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8BA48C2029597E0057661B /* YYCategoryHeader.h */; };
+		3C8BA49020295C600057661B /* UIAlertController+YYConvenient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8BA48E20295C600057661B /* UIAlertController+YYConvenient.h */; };
+		3C8BA49120295C600057661B /* UIAlertController+YYConvenient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA48F20295C600057661B /* UIAlertController+YYConvenient.m */; };
 		4C19C831FE1C6E63D1F0D5150E097354 /* Pods-YYCategory_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CDF7EE634F412932FD180D6DF81777 /* Pods-YYCategory_Example-dummy.m */; };
 		555A3F96F0FF846C379E13ACBF4AC407 /* UIBarButtonItem+YYSeriesEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2184692F495375BC23DBBD6D2724C /* UIBarButtonItem+YYSeriesEvent.m */; };
 		5ACDF1792EFEC9913A8EAD23E331C93E /* Pods-YYCategory_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A7AC57D383B82B01CBF63997F43FD4 /* Pods-YYCategory_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +57,9 @@
 		30A52B121BD0F0BA5BFA7A628AC6D623 /* NSObject+YYLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYLog.h"; sourceTree = "<group>"; };
 		3C2CBEBE200C7B1D000DE8E9 /* NSBundle+YYModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYModule.h"; sourceTree = "<group>"; };
 		3C2CBEBF200C7B1D000DE8E9 /* NSBundle+YYModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YYModule.m"; sourceTree = "<group>"; };
+		3C8BA48C2029597E0057661B /* YYCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YYCategoryHeader.h; path = YYCategory/Classes/YYCategoryHeader.h; sourceTree = "<group>"; };
+		3C8BA48E20295C600057661B /* UIAlertController+YYConvenient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+YYConvenient.h"; sourceTree = "<group>"; };
+		3C8BA48F20295C600057661B /* UIAlertController+YYConvenient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+YYConvenient.m"; sourceTree = "<group>"; };
 		43114465E4A99AA80FE53E21DDDBC46A /* YYCategory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYCategory.modulemap; sourceTree = "<group>"; };
 		4BDA77D910876C084ED6EA729E53E005 /* Pods-YYCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YYCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4E765E93D3286DD0A617BC7E8784F3DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +158,16 @@
 			path = YYCategory/Classes/NSBundle;
 			sourceTree = "<group>";
 		};
+		3C8BA48B202959570057661B /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				3C8BA48E20295C600057661B /* UIAlertController+YYConvenient.h */,
+				3C8BA48F20295C600057661B /* UIAlertController+YYConvenient.m */,
+			);
+			name = UIAlertController;
+			path = YYCategory/Classes/UIAlertController;
+			sourceTree = "<group>";
+		};
 		539EC33ADACC17835CF5E035C786635A /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 		568CBD73D681DB493E48D1FEED0FA155 /* YYCategory */ = {
 			isa = PBXGroup;
 			children = (
+				3C8BA48B202959570057661B /* UIAlertController */,
 				3C2CBEBD200C7AF5000DE8E9 /* NSBundle */,
 				098BB7A112D2548F001EA506977EDEE6 /* NSDictionary */,
 				F7F1F53E150D940C49A323B88D2DF8EB /* NSObject */,
@@ -173,6 +190,7 @@
 				D9EA3AFAE237385F303BD66C6943B027 /* UIBarButtonItem */,
 				355DA5D1CEC3E9CE86855ECB170A443C /* UIControl */,
 				A0F4D1B011C1DB2B178B8E77F6A522D4 /* UIView */,
+				3C8BA48C2029597E0057661B /* YYCategoryHeader.h */,
 			);
 			name = YYCategory;
 			path = ../..;
@@ -338,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EABBFB626D7AE594DA5D825DA1BD804 /* NSDictionary+YY_Extension.h in Headers */,
+				3C8BA48D2029597E0057661B /* YYCategoryHeader.h in Headers */,
 				A94098DB715EB6F3AE207617B85B6B17 /* NSObject+YYDescription.h in Headers */,
+				3C8BA49020295C600057661B /* UIAlertController+YYConvenient.h in Headers */,
 				695048A524E4F95D6FE34350A6DAF512 /* NSObject+YYLog.h in Headers */,
 				D61FF6602C9ADB97CC49A07EA57C7836 /* UIApplication+YY_TopViewController.h in Headers */,
 				1E2176D0655AC21BD1B8E6D29CAB2D79 /* UIBarButtonItem+YYSeriesEvent.h in Headers */,
@@ -455,6 +475,7 @@
 			files = (
 				5B27414646F68E913CA8DE9F13659C0B /* NSDictionary+YY_Extension.m in Sources */,
 				3764296522E709EE153CFDF0EB1F0A81 /* NSObject+YYDescription.m in Sources */,
+				3C8BA49120295C600057661B /* UIAlertController+YYConvenient.m in Sources */,
 				CAF50F0C0311CD71C5218FD911B4D8E4 /* NSObject+YYLog.m in Sources */,
 				6C6DB29A399B1CC9D3FF9EDD07FE565F /* UIApplication+YY_TopViewController.m in Sources */,
 				555A3F96F0FF846C379E13ACBF4AC407 /* UIBarButtonItem+YYSeriesEvent.m in Sources */,
