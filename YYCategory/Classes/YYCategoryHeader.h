@@ -8,16 +8,13 @@
 #ifndef YYCategoryHeader_h
 #define YYCategoryHeader_h
 
-#import "NSBundle/NSBundle+YYModule.h"
-#import "NSDictionary/NSDictionary+YY_Extension.h"
-#import "UIApplication/UIApplication+YY_TopViewController.h"
-#import "UIBarButtonItem/UIBarButtonItem+YYSeriesEvent.h"
-#import "UIControl/UIControl+YYSeriesEvent.h"
-#import "UIView/UIView+YYTouchRangeExpansion.h"
-
-#if DEBUG
-#import "NSObject/NSObject+YYLog.h"
-#import "NSObject/NSObject+YYDescription.h"
-#endif
+#import "NSBundle+YYModule.h"
+#import "NSDictionary+YY_Extension.h"
+#import "UIApplication+YY_TopViewController.h"
+#import "UIBarButtonItem+YYSeriesEvent.h"
+#import "UIControl+YYSeriesEvent.h"
+#import "UIView+YYTouchRangeExpansion.h"
+#import "NSObject+YYLog.h"
+#import "NSObject+YYDescription.h"
 
 #endif /* YYCategoryHeader_h */

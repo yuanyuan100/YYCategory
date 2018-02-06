@@ -7,8 +7,7 @@
 //
 
 #import "YYSeriesEventVC.h"
-#import <YYCategory/UIBarButtonItem+YYSeriesEvent.h>
-#import <YYCategory/UIControl+YYSeriesEvent.h>
+#import <YYCategoryKit/YYCategoryHeader.h>
 
 
 #import <objc/runtime.h>

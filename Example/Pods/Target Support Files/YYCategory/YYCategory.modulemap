@@ -1,6 +1,0 @@
-framework module YYCategory {
-  umbrella header "YYCategory-umbrella.h"
-
-  export *
-  module * { export * }
-}

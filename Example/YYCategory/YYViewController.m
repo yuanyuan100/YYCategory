@@ -7,8 +7,7 @@
 //
 
 #import "YYViewController.h"
-#import <YYCategory/NSObject+YYLog.h>
-#import <YYCategory/NSObject+YYDescription.h>
+#import <YYCategoryKit/YYCategoryHeader.h>
 
 #ifndef CELL_ARRAY
 #define CELL_ARRAY @[@"YYTouchRangeExpansionVC", @"YYSeriesEventVC"]

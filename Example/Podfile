@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'YYCategory_Example' do
-  pod 'YYCategory', :path => '../'
+  pod 'YYCategoryKit', :path => '../'
 
   target 'YYCategory_Tests' do
     inherit! :search_paths

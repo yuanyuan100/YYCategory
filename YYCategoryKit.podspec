@@ -57,6 +57,6 @@ Pod::Spec.new do |s|
   #   'YYCategory' => ['YYCategory/Assets/*.png']
   # }
 
-  s.frameworks = 'UIKit', 'Foudation'
+  s.frameworks = 'UIKit', 'Foundation'
   
 end

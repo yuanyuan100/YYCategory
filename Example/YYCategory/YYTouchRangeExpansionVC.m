@@ -7,7 +7,7 @@
 //
 
 #import "YYTouchRangeExpansionVC.h"
-#import <YYCategory/UIView+YYTouchRangeExpansion.h>
+#import <YYCategoryKit/YYCategoryHeader.h>
 
 @interface YYTouchRangeExpansionVC ()
 @property (weak, nonatomic) IBOutlet UIButton *cickBtn;

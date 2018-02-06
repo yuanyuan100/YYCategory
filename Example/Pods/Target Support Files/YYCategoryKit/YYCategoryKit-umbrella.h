@@ -10,14 +10,17 @@
 #endif
 #endif
 
+#import "YYCategoryHeader.h"
+#import "NSBundle+YYModule.h"
 #import "NSDictionary+YY_Extension.h"
 #import "NSObject+YYDescription.h"
 #import "NSObject+YYLog.h"
+#import "UIAlertController+YYConvenient.h"
 #import "UIApplication+YY_TopViewController.h"
 #import "UIBarButtonItem+YYSeriesEvent.h"
 #import "UIControl+YYSeriesEvent.h"
 #import "UIView+YYTouchRangeExpansion.h"
 
-FOUNDATION_EXPORT double YYCategoryVersionNumber;
-FOUNDATION_EXPORT const unsigned char YYCategoryVersionString[];
+FOUNDATION_EXPORT double YYCategoryKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char YYCategoryKitVersionString[];
 
