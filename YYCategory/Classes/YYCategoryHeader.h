@@ -16,5 +16,6 @@
 #import "UIView+YYTouchRangeExpansion.h"
 #import "NSObject+YYLog.h"
 #import "NSObject+YYDescription.h"
+#import "UIAlertController+YYConvenient.h"
 
 #endif /* YYCategoryHeader_h */

@@ -20,9 +20,10 @@ Pod::Spec.new do |s|
   s.author           = { 'yuanyuan100' => '469092943@qq.com' }
   s.source           = { :git => 'https://github.com/yuanyuan100/YYCategory.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'YYCategory/Classes/YYCategoryHeader.h'
+  s.requires_arc = true
+  
   s.public_header_files = 'YYCategory/Classes/YYCategoryHeader.h'
+  s.source_files = 'YYCategory/Classes/YYCategoryHeader.h'
   
   s.subspec 'NSBundle' do |ss|
       ss.source_files = 'YYCategory/Classes/NSBundle/*.{h,m}'
