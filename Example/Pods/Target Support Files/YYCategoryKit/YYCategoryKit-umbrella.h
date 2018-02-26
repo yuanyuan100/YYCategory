@@ -19,6 +19,7 @@
 #import "UIApplication+YY_TopViewController.h"
 #import "UIBarButtonItem+YYSeriesEvent.h"
 #import "UIControl+YYSeriesEvent.h"
+#import "UIDevice+YYModel.h"
 #import "UIView+YYTouchRangeExpansion.h"
 
 FOUNDATION_EXPORT double YYCategoryKitVersionNumber;

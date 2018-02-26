@@ -1,6 +1,6 @@
 {
   "name": "YYCategoryKit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "自己积累的分类方法",
   "description": "自己积累的分类方法,便于快速开发",
   "homepage": "https://github.com/yuanyuan100/YYCategory",
@@ -13,13 +13,14 @@
   },
   "source": {
     "git": "https://github.com/yuanyuan100/YYCategory.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YYCategory/Classes/YYCategoryHeader.h",
-  "public_header_files": "YYCategory/Classes/YYCategoryHeader.h",
+  "requires_arc": true,
+  "public_header_files": "YYCategoryKit/Classes/YYCategoryHeader.h",
+  "source_files": "YYCategoryKit/Classes/YYCategoryHeader.h",
   "frameworks": [
     "UIKit",
     "Foundation"
@@ -27,35 +28,39 @@
   "subspecs": [
     {
       "name": "NSBundle",
-      "source_files": "YYCategory/Classes/NSBundle/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/NSBundle/*.{h,m}"
     },
     {
       "name": "NSDictionary",
-      "source_files": "YYCategory/Classes/NSDictionary/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/NSDictionary/*.{h,m}"
     },
     {
       "name": "NSObject",
-      "source_files": "YYCategory/Classes/NSObject/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/NSObject/*.{h,m}"
     },
     {
       "name": "UIApplication",
-      "source_files": "YYCategory/Classes/UIApplication/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/UIApplication/*.{h,m}"
     },
     {
       "name": "UIBarButtonItem",
-      "source_files": "YYCategory/Classes/UIBarButtonItem/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/UIBarButtonItem/*.{h,m}"
     },
     {
       "name": "UIControl",
-      "source_files": "YYCategory/Classes/UIControl/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/UIControl/*.{h,m}"
     },
     {
       "name": "UIView",
-      "source_files": "YYCategory/Classes/UIView/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/UIView/*.{h,m}"
     },
     {
       "name": "UIAlertController",
-      "source_files": "YYCategory/Classes/UIAlertController/*.{h,m}"
+      "source_files": "YYCategoryKit/Classes/UIAlertController/*.{h,m}"
+    },
+    {
+      "name": "UIDevice",
+      "source_files": "YYCategoryKit/Classes/UIDevice/*.{h,m}"
     }
   ]
 }

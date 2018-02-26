@@ -22,35 +22,35 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   
-  s.public_header_files = 'YYCategory/Classes/YYCategoryHeader.h'
-  s.source_files = 'YYCategory/Classes/YYCategoryHeader.h'
+  s.public_header_files = 'YYCategoryKit/Classes/YYCategoryHeader.h'
+  s.source_files = 'YYCategoryKit/Classes/YYCategoryHeader.h'
   
   s.subspec 'NSBundle' do |ss|
-      ss.source_files = 'YYCategory/Classes/NSBundle/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/NSBundle/*.{h,m}'
   end
   s.subspec 'NSDictionary' do |ss|
-      ss.source_files = 'YYCategory/Classes/NSDictionary/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/NSDictionary/*.{h,m}'
   end
   s.subspec 'NSObject' do |ss|
-      ss.source_files = 'YYCategory/Classes/NSObject/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/NSObject/*.{h,m}'
   end
   s.subspec 'UIApplication' do |ss|
-      ss.source_files = 'YYCategory/Classes/UIApplication/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/UIApplication/*.{h,m}'
   end
   s.subspec 'UIBarButtonItem' do |ss|
-      ss.source_files = 'YYCategory/Classes/UIBarButtonItem/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/UIBarButtonItem/*.{h,m}'
   end
   s.subspec 'UIControl' do |ss|
-      ss.source_files = 'YYCategory/Classes/UIControl/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/UIControl/*.{h,m}'
   end
   s.subspec 'UIView' do |ss|
-      ss.source_files = 'YYCategory/Classes/UIView/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/UIView/*.{h,m}'
   end
   s.subspec 'UIAlertController' do |ss|
-     ss.source_files = 'YYCategory/Classes/UIAlertController/*.{h,m}'
+     ss.source_files = 'YYCategoryKit/Classes/UIAlertController/*.{h,m}'
   end
   s.subspec 'UIDevice' do |ss|
-      ss.source_files = 'YYCategory/Classes/UIDevice/*.{h,m}'
+      ss.source_files = 'YYCategoryKit/Classes/UIDevice/*.{h,m}'
   end
   
   #s.subspec '<#name#>' do |ss|
