@@ -18,6 +18,6 @@
 #import "UIControl+YYSeriesEvent.h"
 #import "UIView+YYTouchRangeExpansion.h"
 #import "UIAlertController+YYConvenient.h"
-#import "UIDevice+YYModel"
+#import "UIDevice+YYModel.h"
 
 #endif /* YYCategoryHeader_h */
