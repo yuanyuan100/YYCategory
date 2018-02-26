@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYCategoryKit'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '自己积累的分类方法'
 
   s.description      = <<-DESC
