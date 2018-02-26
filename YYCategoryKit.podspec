@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYCategoryKit'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = '自己积累的分类方法'
 
   s.description      = <<-DESC
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
      ss.source_files = 'YYCategoryKit/Classes/UIAlertController/*.{h,m}'
   end
   s.subspec 'UIDevice' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/UIDevice/*.{h,m}'
+     ss.source_files = 'YYCategoryKit/Classes/UIDevice/*.{h,m}'
   end
   
   #s.subspec '<#name#>' do |ss|
