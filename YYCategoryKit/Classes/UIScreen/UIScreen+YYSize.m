@@ -11,6 +11,7 @@
 + (UIScrrenYYSize)yy_type {
     UIScrrenYYSize i = UIScrrenYYSize_1125x2436;
     while (i) {
+        NSLog(@"%@---%@", NSStringFromCGSize([self yy_size]), NSStringFromCGSize([self yy_sizeType:i]));
         if (CGSizeEqualToSize([self yy_size], [self yy_sizeType:i])) {
             return i;
         }
@@ -23,17 +24,17 @@
 + (CGSize)yy_sizeType:(UIScrrenYYSize)type {
     switch (type) {
         case UIScrrenYYSize_320x480:
-            return CGSizeMake(320, 480);
+            return CGSizeMake(320/1.0, 480/1.0);
         case UIScrrenYYSize_640x960:
-            return CGSizeMake(640, 960);
+            return CGSizeMake(640/2.0, 960/2.0);
         case UIScrrenYYSize_640x1136:
-            return CGSizeMake(640, 1136);
+            return CGSizeMake(640/2.0, 1136/2.0);
         case UIScrrenYYSize_750x1334:
-            return CGSizeMake(750, 1334);
+            return CGSizeMake(750/2.0, 1334/2.0);
         case UIScrrenYYSize_1080x1920:
-            return CGSizeMake(1080, 1920);
+            return CGSizeMake(414, 736);
         case UIScrrenYYSize_1125x2436:
-            return CGSizeMake(1125, 2436);
+            return CGSizeMake(1125/3.0, 2436/3.0);
         default:
             return CGSizeZero;
     }
