@@ -22,8 +22,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   
-  s.public_header_files = 'YYCategoryKit/Classes/YYCategoryHeader.h'
-  s.source_files = 'YYCategoryKit/Classes/YYCategoryHeader.h'
+  s.public_header_files = 'YYCategoryKit/Classes/**/*.h'
   
   s.subspec 'NSBundle' do |ss|
       ss.source_files = 'YYCategoryKit/Classes/NSBundle/*.{h,m}'
@@ -56,14 +55,6 @@ Pod::Spec.new do |s|
      ss.source_files = 'YYCategoryKit/Classes/UIScreen/*.{h,m}'
   end
   
-  #s.subspec '<#name#>' do |ss|
-  #   <#content#>
-  #end
-  
-  # s.resource_bundles = {
-  #   'YYCategory' => ['YYCategory/Assets/*.png']
-  # }
-
   s.frameworks = 'UIKit', 'Foundation'
   
 end
