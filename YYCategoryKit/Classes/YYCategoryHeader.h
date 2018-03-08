@@ -17,6 +17,7 @@
 #import "UIBarButtonItem+YYSeriesEvent.h"
 #import "UIControl+YYSeriesEvent.h"
 #import "UIView+YYTouchRangeExpansion.h"
+#import "UIView+YYLine.h"
 #import "UIAlertController+YYConvenient.h"
 #import "UIDevice+YYModel.h"
 #import "UIScreen+YYSize.h"
