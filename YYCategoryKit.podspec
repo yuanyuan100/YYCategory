@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYCategoryKit'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = '自己积累的分类方法'
 
   s.description      = <<-DESC
@@ -23,37 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.public_header_files = 'YYCategoryKit/Classes/**/*.h'
-  
-  s.subspec 'NSBundle' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/NSBundle/*.{h,m}'
-  end
-  s.subspec 'NSDictionary' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/NSDictionary/*.{h,m}'
-  end
-  s.subspec 'NSObject' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/NSObject/*.{h,m}'
-  end
-  s.subspec 'UIApplication' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/UIApplication/*.{h,m}'
-  end
-  s.subspec 'UIBarButtonItem' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/UIBarButtonItem/*.{h,m}'
-  end
-  s.subspec 'UIControl' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/UIControl/*.{h,m}'
-  end
-  s.subspec 'UIView' do |ss|
-      ss.source_files = 'YYCategoryKit/Classes/UIView/*.{h,m}'
-  end
-  s.subspec 'UIAlertController' do |ss|
-     ss.source_files = 'YYCategoryKit/Classes/UIAlertController/*.{h,m}'
-  end
-  s.subspec 'UIDevice' do |ss|
-     ss.source_files = 'YYCategoryKit/Classes/UIDevice/*.{h,m}'
-  end
-  s.subspec 'UIScreen' do |ss|
-     ss.source_files = 'YYCategoryKit/Classes/UIScreen/*.{h,m}'
-  end
+  s.source_files = 'YYCategoryKit/Classes/**/*.{h,m}'
   
   s.frameworks = 'UIKit', 'Foundation'
   
