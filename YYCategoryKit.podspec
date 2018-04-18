@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   
-  s.public_header_files = 'YYCategoryKit/Classes/**/*.h'
+  #s.public_header_files = 'YYCategoryKit/Classes/**/*.h'
   s.source_files = 'YYCategoryKit/Classes/**/*.{h,m}'
   
   s.frameworks = 'UIKit', 'Foundation'

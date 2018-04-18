@@ -15,6 +15,9 @@
         if (CGSizeEqualToSize([self yy_size], [self yy_sizeType:i])) {
             return i;
         }
+        if (CGSizeEqualToSize(CGSizeMake([self yy_size].height, [self yy_size].width), [self yy_sizeType:i])) {
+            return i;
+        }
         i--;
     }
     return UIScrrenYYSize_Unkown;
